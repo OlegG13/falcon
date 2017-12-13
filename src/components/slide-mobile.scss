@@ -1,0 +1,122 @@
+.slide-mobile {
+  padding: 35px 15px 114px;
+
+  &__inner {
+    margin: 0 auto;
+    box-shadow: 0 0 21px rgba(6, 6, 6, 0.13);
+    background: rgba(255,255,255, 0.9);
+    padding: 0 25px;
+    position: relative;
+    @media (min-width: $screen-md){
+      max-width: 960px;
+    }
+    @media (min-width: $screen-xl){
+      max-width: 1180px;
+    }
+
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: none;
+
+      @media (min-width: $screen-md){
+        display: block;
+      }
+
+    }
+
+    // nexus
+    &::before {
+      width: 324px;
+      height: 619px;
+      background-image: url("../img/nexus.png");
+      right: -10px;
+      top: -77px;
+
+    }
+
+    //iphone
+    &::after {
+      width: 291px;
+      height: 593px;
+      background-image: url("../img/iphone.png");
+      right: 193px;
+      top: 32px;
+
+    }
+  }
+
+  &__inner-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1444px;
+    margin: 0 auto;
+  }
+
+  &__col-description {
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+    width: 360px;
+    margin-left: auto;
+
+    padding-top: 40px;
+    padding-bottom: 80px;
+
+
+    @media (min-width: $screen-sm){
+      padding-top: 60px;
+      padding-bottom: 110px;
+    }
+
+    @media (min-width: $screen-md){
+      margin-left: 50px;
+      padding-top: 107px;
+      padding-bottom: 146px;
+    }
+    @media (min-width: $screen-xl){
+      margin-left: 100px;
+    }
+  }
+
+  &__col-image {
+    padding-bottom: 30px;
+    padding-left: 60px;
+    width: 50%;
+  }
+
+
+  &__title {
+    color: #212121;
+    font-size: 18px;
+    line-height: 24.23px;
+    text-transform: uppercase;
+    letter-spacing: 2.84px;
+    margin-bottom: 44px;
+    font-weight: bold;
+    margin-top: 30px;
+    @media (min-width: $screen-xl){
+      margin-top: 0;
+    }
+  }
+  &__description {
+    color: #000000;
+    font-size: 16px;
+    line-height: 22.8px;
+    margin-bottom: 43px;
+  }
+
+  &__action-row {
+    margin-left: -18px;
+    margin-top: -18px;
+  }
+
+  &__action {
+    display: inline-block;
+    margin-left: 18px;
+    margin-top: 18px;
+  }
+
+}

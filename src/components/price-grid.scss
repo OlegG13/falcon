@@ -1,0 +1,44 @@
+.price-grid {
+
+  text-align: center;
+  font-size: 0;
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+    padding: 0 10px;
+
+    @media (max-width: $screen-md){
+      margin-bottom: 30px;
+      display: block;
+      width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+    }
+
+  }
+
+  &__item--secondary {
+
+    @media (min-width: $screen-md){
+      width: 310px;
+    }
+    @media (min-width: $screen-lg){
+      width: 380px;
+    }
+
+
+  }
+
+  &__item--primary {
+
+    @media (min-width: $screen-md){
+      width: 330px;
+    }
+    @media (min-width: $screen-lg){
+      width: 400px;
+    }
+  }
+}

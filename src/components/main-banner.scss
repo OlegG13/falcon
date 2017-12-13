@@ -1,0 +1,151 @@
+.main-banner {
+
+  &__slide {
+    padding-top: 120px;
+    padding-bottom: 42px;
+    background-size: cover;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__slide {
+    display: none;
+  }
+
+  &__slide:first-child {
+    display: block;
+  }
+
+  @at-root .slick-initialized &__slide {
+    display: block!important;
+  }
+
+  &__slide-inner {
+
+    margin: 0 auto;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    border-right: 4px solid #fff;
+    position: relative;
+
+    text-align: center;
+    @media (min-width: $screen-md){
+      text-align: left;
+    }
+
+    padding-top: 50px;
+    padding-bottom: 52px;
+    @media (min-width: $screen-xs){
+      padding-top: 50px;
+      padding-bottom: 52px;
+    }
+    @media (min-width: $screen-sm){
+      padding-top: 70px;
+      padding-bottom: 52px;
+    }
+    @media (min-width: $screen-md){
+      padding-top: 90px;
+      padding-bottom: 52px;
+    }
+    @media (min-width: $screen-lg){
+      padding-top: 110px;
+      padding-bottom: 52px;
+      max-width: 1100px;
+    }
+    @media (min-width: $screen-xl){
+      max-width: 1425px;
+    }
+
+
+    &::after,
+    &::before {
+      content: '';
+      width: 40px;
+      @media (min-width: $screen-xs){
+        width: 60px;
+      }
+      @media (min-width: $screen-sm){
+        width: 80px;
+      }
+      @media (min-width: $screen-md){
+        width: 150px;
+      }
+      height: 4px;
+      background: #fff;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    &::before {
+      left: 0;
+    }
+  }
+  &__slide-title {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 45px;
+    @media (min-width: $screen-xs){
+      margin-bottom: 55px;
+    }
+    @media (min-width: $screen-sm){
+      margin-bottom: 75px;
+    }
+    @media (min-width: $screen-md){
+      max-width: 600px;
+      margin-bottom: 90px;
+    }
+    @include fluidFontSize(30px, 60px, 320px, 768px, 60px);
+
+    &--mark {
+      color: #36aeea;
+    }
+  }
+  &__slide-action {
+    margin-bottom: 25px;
+  }
+
+  &__slide-footer {
+    display: flex;
+    justify-content: center;
+    @media (min-width: $screen-md){
+      justify-content: flex-end;
+    }
+  }
+
+  &__slide-footer-cell {
+    &:not(:last-child){
+      margin-right: 25px;
+    }
+  }
+
+
+  .slick-dots {
+    font-size: 0;
+    text-align: center;
+    margin-top: -53px;
+    z-index: 1000;
+    position: relative;
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 7px;
+    }
+
+    button {
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+      background: #36aeea;
+      border-radius: 50%;
+    }
+
+    .slick-active button {
+      border: 3px solid #fff;
+    }
+  }
+}

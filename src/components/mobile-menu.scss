@@ -1,0 +1,21 @@
+.mobile-menu {
+  display: none;
+
+  &__list {
+
+  }
+
+  &__list-item {
+    padding: 10px 0;
+    &:not(:last-child){
+      border-bottom: 1px solid #36aeea;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+  }
+}

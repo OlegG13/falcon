@@ -1,0 +1,27 @@
+.price {
+
+
+  &__cur,
+  &__value,
+  &__time {
+    display: inline-block;
+  }
+
+  &__cur {
+    font-size: 30px;
+    color: #36aeea;
+    vertical-align: top;
+  }
+  &__value {
+    font-size: 60px;
+    color: #36aeea;
+    margin-right: 5px;
+    line-height: 45px;
+  }
+  &__time {
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+    vertical-align: bottom;
+  }
+}

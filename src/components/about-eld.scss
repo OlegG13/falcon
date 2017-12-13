@@ -1,0 +1,90 @@
+.about-eld {
+  display: flex;
+
+  &__description {
+    background-image: url("../img/map.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+      padding-bottom: 40px;
+    width: 100%;
+    @media (min-width: $screen-md){
+      width: 62%;
+      padding-right: 25px;
+    }
+
+  }
+  &__title {
+    color: #2c2e37;
+    @include fluidFontSize(18px, 30px, 320px, 768px, 30px);
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3.51px;
+    font-weight: bold;
+    max-width: 370px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-bottom: 34px;
+    position: relative;
+    line-height: 30px;
+    @media (min-width: $screen-md) {
+      line-height: 42.73px;
+    }
+
+    &:before {
+      content: '';
+      height: 3px;
+      background: #00b7f4;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      @media (min-width: $screen-md){
+        width: 170px;
+      }
+    }
+
+  }
+  &__text {
+    color: #252323;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 48px;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      @include sprite($stamp);
+      bottom: -134px;
+      right: 19px;
+    }
+  }
+  &__read-more {
+
+  }
+  &__image {
+    width: 38%;
+    position: relative;
+    z-index: 100;
+    margin-top: -30px;
+    font-size: 0;
+    @media (max-width: $screen-xl) {
+
+      &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: bottom;
+        height: 100%;
+        width: 0;
+      }
+      img {
+        display: inline-block;
+        vertical-align: bottom;
+      }
+
+    }
+  }
+}

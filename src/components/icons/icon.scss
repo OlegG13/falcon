@@ -1,0 +1,71 @@
+.icon {
+  display: inline-block;
+
+  &--play-market {
+    @include sprite($play-market);
+  }
+  &--ios-store {
+    @include sprite($app-store);
+  }
+  &--reporting {
+    @include sprite($reporting);
+  }
+  &--easy-dvir {
+    @include sprite($easy-dvir);
+  }
+  &--electronic {
+    @include sprite($electronic);
+  }
+  &--messanger {
+    @include sprite($messenger);
+  }
+  &--alert {
+    @include sprite($alert);
+  }
+  &--counter {
+    @include sprite($counter);
+  }
+  &--violation {
+    @include sprite($violation);
+  }
+  &--managment {
+    @include sprite($managment);
+  }
+  &--mailer {
+    @include sprite($mailer-icon);
+  }
+
+  &--transport {
+    @include sprite($transport);
+  }
+  &--human {
+    @include sprite($human);
+  }
+  &--police-badge {
+    @include sprite($police-badge);
+  }
+  &--information {
+    @include sprite($information);
+  }
+  &--money {
+    @include sprite($money);
+  }
+  &--safety-box {
+    @include sprite($safety-box);
+  }
+  &--operator {
+    @include sprite($operator);
+  }
+  &--translation {
+    @include sprite($translation);
+  }
+  &--star {
+    @include sprite($star);
+  }
+  &--twitter {
+    @include sprite($twitter);
+  }
+  &--facebook {
+    @include sprite($facebook);
+  }
+}

@@ -1,0 +1,16 @@
+.g-conteiner {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media (min-width: $screen-sm) {
+    max-width: 750px;
+  }
+
+  @media (min-width: $screen-md) {
+    max-width: 970px;
+  }
+
+  @media (min-width: $screen-xl) {
+    max-width: $container-max-width;
+  }
+}

@@ -1,0 +1,41 @@
+.form-control {
+  position: relative;
+
+
+  &__input {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+  }
+  &__label {
+    font-size: 14px;
+    color: #615b5b;
+    transition: .3s;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    padding-left: 12px;
+  }
+
+  &__input.has-content ~ &__label,
+  &__input:focus ~ &__label {
+    font-size: 12px;
+    top: -8px;
+    left: -12px;
+  }
+  &__border {
+    height: 1px;
+    background: #000;
+  }
+  &__input.has-content ~ &__border,
+  &__input:focus ~ &__border {
+
+  }
+
+  &--feedback &__label {
+    color: #cccccc;
+  }
+  &--feedback &__border {
+    background: #cccccc;
+  }
+}

@@ -1,0 +1,65 @@
+.feedback {
+
+  padding: 40px 0 44px;
+  background: #fff;
+  box-shadow: 2px 5px 51px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+
+
+  &__header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    color: #36aeea;
+    text-align: center;
+    margin-bottom: 12px;
+    @include fluidFontSize(18px, 28px, 320px, 768px, 28px);
+  }
+
+  &__description {
+    color: #383e4a;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__form {
+    padding: 35px 20px 55px;
+    @media (min-width: $screen-md){
+      padding: 50px 50px 110px;
+    }
+  }
+
+  &__row {
+    &:not(:last-child){
+      margin-bottom: 30px;
+      @media (min-width: $screen-md){
+        margin-bottom: 45px;
+      }
+    }
+
+    &--inline {
+      @media (min-width: $screen-md){
+        display: flex;
+      }
+    }
+  }
+
+  &__col {
+    margin-bottom: 30px;
+    @media (min-width: $screen-md){
+      margin-bottom: 0;
+      width: 50%;
+
+    &--name {
+      margin-right: 26px;
+    }
+
+    &--phone {
+      margin-left: 26px;
+    }
+    }
+  }
+
+
+
+}

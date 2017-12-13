@@ -1,0 +1,42 @@
+
+.hidden {
+  display: none;
+
+  &-xs {
+    @media (max-width: $screen-sm){
+      display: none;
+    }
+  }
+  &-sm {
+    @media (min-width: $screen-sm) and (max-width: $screen-md){
+      display: none;
+    }
+  }
+  &-md {
+    @media (min-width: $screen-md) and (max-width: $screen-lg){
+      display: none;
+    }
+  }
+  &-lg {
+    @media (min-width: $screen-lg) and (max-width: $screen-xl){
+      display: none;
+    }
+  }
+  &-xl {
+    @media (min-width: $screen-xl){
+      display: none;
+    }
+  }
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    color: #36aeea;
+  }
+}
+
+
+

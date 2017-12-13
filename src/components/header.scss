@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 18px;
+  @media (max-width: $screen-md){
+    &__logo {
+        width: 50%;
+        order: 2;
+        text-align: center;
+        padding: 0 10px;
+    }
+    &__menu {
+      width: 15%;
+      order: 1;
+    }
+    &__user-panel {
+      width: 35%;
+      order: 3;
+      //padding-left: 15px;
+    }
+  }
+
+  @media (min-width: $screen-md){
+    &__logo {
+      width: 22%;
+    }
+    &__menu {
+      width: 50%;
+    }
+    &__user-panel {
+      width: 28%;
+    }
+  }
+
+
+  &__logo {}
+
+  &__menu {
+
+  }
+
+  &__user-panel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__user-login {
+
+  }
+
+  &__user-sign-up {
+    margin-right: 37px;
+  }
+}

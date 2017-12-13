@@ -1,0 +1,64 @@
+.price-card {
+  box-shadow: 0 5px 20px rgba(205, 205, 205, 0.6);
+  background-color: #fff;
+  text-align: center;
+  padding: 50px 30px 60px;
+  position: relative;
+  z-index: 100  ;
+  @media (min-width: $screen-lg){
+    padding: 50px 50px 60px;
+  }
+  @at-root .price-grid__item--primary .price-card {
+    padding: 65px 30px 75px;
+    @media (min-width: $screen-lg){
+      padding: 65px 50px 75px;
+    }
+  }
+
+  &__title {
+    color: #1c1c1c;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  &__plan-name {
+    color: #36aeea;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  &__price {
+    margin-bottom: 34px;
+  }
+
+  &__supports {
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    margin-bottom: 25px;
+    line-height: 42px;
+    white-space: nowrap;
+    font-size: 14px;
+    @media (min-width: $screen-lg){
+      font-size: 16px;
+    }
+    @media (max-width: $screen-md){
+      font-size: 13px;
+    }
+  }
+
+  &__description + &__description {
+    margin-bottom: 50px;
+  }
+
+  &__purchase {
+
+  }
+}

@@ -1,0 +1,153 @@
+.product-slider {
+
+  &__row {
+    position: relative;
+  }
+
+  &__wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @media (min-width: $screen-lg){
+    &__slide {
+      display: none;
+    }
+
+    &__slide:first-child {
+      display: block;
+    }
+
+    @at-root .slick-initialized &__slide {
+      display: block!important;
+    }
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 35px;
+    @media (min-width: $screen-md){
+      margin-bottom: 60px;
+    }
+  }
+
+  &__title {
+    color: #2c2e37;
+    font-size: 30px;
+    line-height: 42.73px;
+    text-transform: uppercase;
+    letter-spacing: 3.51px;
+    position: relative;
+    padding-bottom: 20px;
+    display: inline-block;
+    font-weight: bold;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 4px;
+      background-color: #00b7f4;
+      bottom: 0;
+      width: 120px;
+      @media (min-width: $screen-md){
+        width: 170px;
+      }
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__arrow {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #36aeea;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    display: none;
+    transition: .3s;
+    &:hover {
+      background: #40baea;
+      svg {
+        fill: #fff;
+      }
+
+    }
+
+    @media (min-width: $screen-lg){
+      display: inline-block;
+    }
+
+    &--left {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    &--left {
+      left: 15px;
+    }
+    &--right {
+      right: 15px;
+    }
+
+    //@media (max-width: 1646px){
+    //  display: none !important;
+    //}
+    // icon
+    svg {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 22px;
+      height: 27px;
+      fill: #36aeea;
+    }
+
+    @media (min-width: 1646px){
+      &--left {
+        left: -72px;
+      }
+      &--right {
+        right: -72px;
+      }
+    }
+
+  }
+
+  .slick-dots {
+    font-size: 0;
+    text-align: center;
+    z-index: 1000;
+    position: relative;
+    margin-top: 40px;
+
+
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 7px;
+    }
+
+    button {
+      width: 18px;
+      height: 18px;
+      box-sizing: border-box;
+      background: #36aeea;
+      border-radius: 50%;
+    }
+
+    .slick-active button {
+      border: 3px solid #fff;
+    }
+  }
+
+}
+

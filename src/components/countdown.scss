@@ -1,0 +1,50 @@
+.countdown {
+
+  &__inner {
+    max-width: 1260px;
+    background: rgba(255,255,255, 0.85);
+    padding: 21px 15px 28px;
+    margin: 0 auto;
+  }
+
+  &__inner-wrapper {
+    max-width: 875px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__timer-row,
+  &__order-row {
+    text-align: center;
+    @media (min-width: $screen-md){
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__timer-row {
+    margin-bottom: 18px;
+  }
+
+  &__order-row {
+  }
+
+  &__title {
+    color: #000000;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 1.8px;
+    margin-bottom: 15px;
+    @include fluidFontSize(24px, 36px, 320px, 960px, 36px);
+    @media (min-width: $screen-md){
+      margin-bottom: 0;
+    }
+  }
+
+  &__timer {
+
+  }
+}
+
